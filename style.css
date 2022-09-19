@@ -2,6 +2,7 @@
 *{font-family: 'Poppins', sans-serif;
 }
 .title {
+    padding: 1%;
     text-align: center;
     
 }
@@ -15,15 +16,12 @@
 .body {
     text-align: center;
 }
+.padding-remove {
+    padding-right: 5%;
+}
 
-
-.animated {
+.gif-image {
     vertical-align: top;
-    margin: 3%;
-    padding: 2px;
-    width: 200px;
-    margin-top: 15px;
-    margin-left: 20px;
     border-radius: 15px;
     border-style:dashed;
     
@@ -32,7 +30,7 @@
 }
 
 
-.animated:hover {
+.gif-image:hover {
     transition: all 0.5s;
     transform: scale(90%)
 }
@@ -97,3 +95,18 @@ nav {
 
 
 
+/* (A) FLEX LAYOUT */
+.flex-space {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+   
+  /* (B) IMAGES */
+  .flex-space img {
+    width: 20%; /* 2 items per row, 100% / 2 = 50% */
+    height: auto;
+  }
+
+   
