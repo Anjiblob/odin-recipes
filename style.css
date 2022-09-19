@@ -1,11 +1,24 @@
 
 *{font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .title {
-    padding: 1%;
+    padding: 3%;
+    position: relative;
+    margin-bottom: -5px;
     text-align: center;
-    
+    color: black;
+    bottom: 20px;
+    opacity: 0;
+    animation: intro 2s forwards;
+
 }
+@keyframes intro {
+    100% {bottom: 0};
+    from {opacity: 0} to {opacity: 1};
+}
+
 .thumbnail {
     padding: 1px;
     width: 100px;
@@ -13,14 +26,24 @@
     
 }
 
+.header {
+    min-height: 100vh;
+    background-image:  url(images/wood.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
 .body {
     text-align: center;
 }
-.padding-remove {
-    padding-right: 5%;
-}
+
 
 .gif-image {
+    margin-top: 25px;
     vertical-align: top;
     border-radius: 15px;
     border-style:dashed;
